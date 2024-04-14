@@ -12,7 +12,7 @@ def download():
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    driver=webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
+    driver=webdriver.Chrome(options=options)
     driver.get("https://google.com")
     title=driver.title
     language=driver.find_element(By.XPATH,"//div[id=SIvCob]").text
