@@ -2,4 +2,4 @@ selenium
 webdriver_manager
 flask_restful
 flask_cors
-guicorn
+gunicorn
